@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="home">
+            <h1>Quick Quiz</h1>
+            <a href="#" class="btn" id="start-btn">Play</a>
+        </div>
+        <div id="quiz" class="quiz hide">
+            <div class="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">Question</p>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">Score</p>
+                    <h1 class="hud-main-text" id="score">0</h1>
+                </div>
+                <div class="hud-item">
+                    <div id="progressBarFull" class="progress-bar"></div>
+                </div>
+            </div>
+            <h2 id="question">Question</h2>
+            <div class="choices">
+                <button class="choice-btn" data-number="1"></button>
+                <button class="choice-btn" data-number="2"></button>
+                <button class="choice-btn" data-number="3"></button>
+                <button class="choice-btn" data-number="4"></button>
+            </div>
+        </div>
+        <div id="end" class="end hide">
+            <h2>Your Score: <span id="finalScore">0</span></h2>
+            <a href="#" class="btn" id="restart-btn">Restart</a>
+            <a href="#" class="btn" id="home-btn">Home</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
